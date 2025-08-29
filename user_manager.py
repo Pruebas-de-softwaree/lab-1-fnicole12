@@ -29,7 +29,12 @@ class UserManager:
 if __name__ == "__main__":
     user_manager = UserManager()
     
+    #RF1 agregar 500 usuarios
     for i in range(500):
         user_manager.add_user(i, f"Yo soy el usuario num: {i}")
         
+
+    #RF1 checar duplicados
+    user_manager.add_user(1, f"Yo soy el verdadero numero 1")
+    
     print("end")
