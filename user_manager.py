@@ -38,3 +38,7 @@ if __name__ == "__main__":
 
     #RF2 checar id inexistente
     print(user_manager.find_user(600))
+
+    #RF2 checar id existente
+    print(user_manager.find_user(5))
+    print("end")
