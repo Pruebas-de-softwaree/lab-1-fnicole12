@@ -37,5 +37,4 @@ if __name__ == "__main__":
     user_manager.add_user(1, f"Yo soy el verdadero numero 1")
 
     #RF2 checar id inexistente
-    print(user_manager.find_user(100))
-    print("end")
+    print(user_manager.find_user(600))
