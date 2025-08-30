@@ -46,5 +46,7 @@ if __name__ == "__main__":
     user_manager.delete_user(1)
     print(user_manager.find_user(1))
 
+    #Eliminar usuario no existente
+    print(user_manager.delete_user(1200))
 
     print("end")
