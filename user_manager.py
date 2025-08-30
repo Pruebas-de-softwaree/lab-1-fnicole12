@@ -33,6 +33,13 @@ if __name__ == "__main__":
     for i in range(1000):
         user_manager.add_user(i, f"Yo soy el usuario num: {i}")
         
+    #RF2 tiempo de busqueda
+    start = time.time()
+    for u in range(1000):
+        user_manager.find_user(u)
+    end = time.time()
+    time = end - start
+    print(time)
 
 
 
