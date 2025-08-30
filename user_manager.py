@@ -44,5 +44,10 @@ if __name__ == "__main__":
 
     #RF3 borrar usuario existente
     user_manager.delete_user(3)
-    print(user_manager.find(3))
+
+    #RF4 obtener lista de nombres
+    print(user_manager.get_all_names())
+
+
+
     print("end")
