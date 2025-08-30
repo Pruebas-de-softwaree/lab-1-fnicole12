@@ -48,6 +48,10 @@ if __name__ == "__main__":
     #RF4 obtener lista de nombres
     print(user_manager.get_all_names())
 
+    #RF5 calcular promedio de Ids
+    print(user_manager.average_user_id())
 
+
+    
 
     print("end")
