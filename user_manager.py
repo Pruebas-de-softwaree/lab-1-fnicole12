@@ -29,11 +29,11 @@ class UserManager:
 if __name__ == "__main__":
     user_manager = UserManager()
     
-    #RF1 agregar 1000 usuarios
+    #RFN1 agregar 1000 usuarios
     for i in range(1000):
         user_manager.add_user(i, f"Yo soy el usuario num: {i}")
         
-    #RF2 tiempo de busqueda
+    #RFN2 tiempo de busqueda
     start = time.time()
     for u in range(1000):
         user_manager.find_user(u)
@@ -41,7 +41,10 @@ if __name__ == "__main__":
     time = end - start
     print(time)
 
-
+    #RFN3 
+    user_manager.add_user(1, "Yo soy el 1")
+    user_manager.delete_user(1)
+    print(user_manager.find_user(1))
 
 
     print("end")
