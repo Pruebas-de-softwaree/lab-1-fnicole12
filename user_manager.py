@@ -41,4 +41,8 @@ if __name__ == "__main__":
 
     #RF2 checar id existente
     print(user_manager.find_user(5))
+
+    #RF3 borrar usuario existente
+    user_manager.delete_user(3)
+    print(user_manager.find(3))
     print("end")
