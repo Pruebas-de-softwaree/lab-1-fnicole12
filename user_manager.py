@@ -29,29 +29,12 @@ class UserManager:
 if __name__ == "__main__":
     user_manager = UserManager()
     
-    #RF1 agregar 500 usuarios
-    for i in range(500):
+    #RF1 agregar 1000 usuarios
+    for i in range(1000):
         user_manager.add_user(i, f"Yo soy el usuario num: {i}")
         
-    #RF1 checar duplicados
-    user_manager.add_user(1, f"Yo soy el verdadero numero 1")
-
-    #RF2 checar id inexistente
-    print(user_manager.find_user(600))
-
-    #RF2 checar id existente
-    print(user_manager.find_user(5))
-
-    #RF3 borrar usuario existente
-    user_manager.delete_user(3)
-
-    #RF4 obtener lista de nombres
-    print(user_manager.get_all_names())
-
-    #RF5 calcular promedio de Ids
-    print(user_manager.average_user_id())
 
 
-    
+
 
     print("end")
